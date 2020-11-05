@@ -27,7 +27,7 @@
     "gulp-plumber": "^1.2.1",
     "gulp-postcss": "^8.0.0",
     "gulp-sass": "^4.1.0",
-    "gulp-sourcemaps": "2.6.5",
+    "gulp-sourcemaps": "^2.6.5",
     "postcss": "^8.1.4"
   }
 }

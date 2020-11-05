@@ -36,24 +36,29 @@
         margin: 0;
       }
 
+      h3 {
+        font-weight: 400;
+      }
+
       .mail-body {
         width: 320px;
         padding: 15px;
         border-bottom: 2px solid #f4f4f4;
       }
 
+      /* .mail-header__logo-link {
+        display: inline-block;
+        width: 70%;
+      } */
+
       .mail-header__link {
-        display: block;
+        display: inline-block;
+        min-width: 150px !important;
         font-size: 14px;
         line-height: 24px;
         font-weight: 700;
+        text-align: right;
         color: #CF4436;
-      }
-
-
-      .mail-header__link-text {
-        display: block;
-        width: 130px;
       }
 
       .mail-main__block {
@@ -82,7 +87,6 @@
       }
 
       .mail-main__discount-link {
-        position: relative;
         display: block;
         max-width: 170px;
         margin-top: 15px;
@@ -122,8 +126,9 @@
         color: #2c2c2c;
       }
 
-      .mail-main__cta__block {
+      .mail-main__cta-block {
         display: block;
+        padding-left: 12px;
       }
 
       .mail-main__cta-link:last-child {
@@ -142,6 +147,10 @@
         color: #888888;
         font-family: 'Open Sans',
         sans-serif;
+      }
+
+      .mail-footer {
+        width: 100% !important;
       }
 
       .mail-footer__group {
@@ -182,11 +191,15 @@
 
       .mail-footer__link + .mail-footer__link {
         margin-left: 35px;
-      /* 40 */
       }
 
       .mail-footer__link-text {
         display: block;
+      }
+
+      .mail-footer__info-link {
+        color: #999999 !important;
+        text-decoration: underline;
       }
     }
 
@@ -225,29 +238,6 @@
         width: 600px;
       }
 
-      .mail-main__discount-wrapper {
-        padding-top: 24px;
-      }
-
-      .mail-main__discount-link::after {
-        content: '';
-        position: absolute;
-        bottom: -24px;
-        left: 50%;
-        transform: translateX(-50%);
-        display: block;
-        height: 1px;
-        width: 84px;
-        background-color: #dddddd;
-      }
-
-      .main-main__title {
-        font-size: 28px;
-        line-height: 36px;
-        font-weight: 700;
-        width: 80%;
-      }
-
       .mail-main__block-title {
         font-size: 20px;
         line-height: 32px;
@@ -257,7 +247,24 @@
         margin-top: 6px;
       }
 
+      .mail-main__block-title:last-child {
+        margin-top: 32px;
+        text-align: center !important;
+      }
+
+      .mail-main__discount-wrapper {
+        padding-top: 24px;
+      }
+
+      .main-main__title {
+        font-size: 28px;
+        line-height: 36px;
+        font-weight: 700;
+        width: 80%;
+      }
+
       .mail-main__cta-link:last-child {
+        display: inline;
         margin-left: 8px;
         margin-top: 0;
       }
@@ -280,10 +287,6 @@
         display: table-cell;
       }
 
-      .mail-main__cta-link:last-child {
-        display: inline;
-      }
-
       .mail-footer__link {
         color: #CCCCCC !important;
         text-decoration: none;
@@ -298,22 +301,22 @@
     <main class="mail-main">
       <table class="mail-body">
         <tr class="mail-header">
-          <td class="mail-header__logo">
-            <a href="#" class="mail-header__logo-link">
+          <td class="mail-header__logo" style="width: 75%;">
+            <a href="#" class="mail-header__logo-link" aria-label="Go to PDFFiller page">
               <img class="mail-header__logo-image" src="https://static.pdffiller.com/mail-templates/img/marketing/mails2020/pdffiller-dark-mode/pdf-filler-logo@2x.png" width="130" height="30" alt="Logo PDFFiller">
             </a>
           </td>
-          <td class="mail-header__link-wrapper" align="right" valign="center">
+          <td>
             <a href="#" class="mail-header__link">
-              <span class="mail-header__link-text">Get My Discount →</span>
+              <span class="mail-header__link-text">Get My Discount <span aria-hidden="true">→</span></span>
             </a>
           </td>
         </tr>
         <tr class="mail-main">
-          <table class="mail-main__block" style="padding-top: 16px; padding-bottom: 24px;" cellpadding="0" cellspacing="0">
+          <table class="mail-main__block" cellpadding="0" cellspacing="0" style="padding-top: 16px; padding-bottom: 24px; border-top: 1px solid #f4f4f4;">
             <tr align="center">
               <td>
-                <a href="#" aria-label="Get my discount 25%">
+                <a href="#" aria-label="Get discount 25%">
                   <img src="https://static.pdffiller.com/mail-templates/img/marketing/mails2020/pdffiller-signnow-discount/disc-25@2x.png" width="225" height="140" alt="25% discount image">
                 </a>
               </td>
@@ -334,53 +337,89 @@
             </tr>
           </table>
           <table class="mail-main__block" cellpadding="0" cellspacing="0">
-            <tr>
+            <tr align="center">
               <td>
-                <h2 class="mail-main__block-title" style="margin-top: 32px; text-align: center;">This offer ends soon!</h2>
+                <p style="width: 84px; margin: 0 auto; padding: 0; height: 1px; background-color: #dddddd;"></p>
+              </td>
+            </tr>
+            <tr align="center">
+              <td>
+                <h2 class="mail-main__block-title">This offer ends soon!</h2>
               </td>
             </tr>
           </table>
           <table class="mail-main__block" cellpadding="0" cellspacing="0" style="padding-top: 22px;">
             <tr>
               <td class="mail-main__image-container" align="center" valign="top">
-                <img src="https://static.pdffiller.com/mail-templates/img/marketing/mails2020/pdffiller-signnow-discount/notarize-2@2x.png" width="32" height="32" alt="">
+                <img src="https://static.pdffiller.com/mail-templates/img/marketing/mails2020/pdffiller-signnow-discount/notarize-2@2x.png" width="32" height="32" aria-hidden="true">
               </td>
               <td>
                 <p class="mail-main__text"><span class="mail-main__text--theme--bold">Notarize</span> your documents online 24/7 in pdfFiller without having to meet a notary in person.</p>
               </td>
             </tr>
             <tr>
+              <td>
+                <p style="width:100%;height:2px;margin:0;padding:0;background-color:#f4f4f4;"></p>
+              </td>
+              <td>
+                <p style="width:100%;height:2px;margin:0;padding:0;background-color:#f4f4f4;"></p>
+              </td>
+            </tr>
+            <tr>
               <td class="mail-main__image-container" align="center" valign="top">
-                <img src="https://static.pdffiller.com/mail-templates/img/marketing/mails2020/pdffiller-signnow-discount/submit-2@2x.png" width="32" height="32" alt="">
+                <img src="https://static.pdffiller.com/mail-templates/img/marketing/mails2020/pdffiller-signnow-discount/submit-2@2x.png" width="32" height="32" aria-hidden="true">
               </td>
               <td>
                 <p class="mail-main__text">Fill out and <span class="mail-main__text--theme--bold">submit your tax returns to the IRS electronically</span>. pdfFiller provides you with a comprehensive library of US tax documents and forms ready to be completed. </p>
               </td>
             </tr>
             <tr>
+              <td>
+                <p style="width:100%;height:2px;margin:0;padding:0;background-color:#f4f4f4;"></p>
+              </td>
+              <td>
+                <p style="width:100%;height:2px;margin:0;padding:0;background-color:#f4f4f4;"></p>
+              </td>
+            </tr>
+            <tr>
               <td class="mail-main__image-container" align="center" valign="top">
-                <img src="https://static.pdffiller.com/mail-templates/img/marketing/mails2020/pdffiller-signnow-discount/secure@2x.png" width="32" height="32" alt="">
+                <img src="https://static.pdffiller.com/mail-templates/img/marketing/mails2020/pdffiller-signnow-discount/secure@2x.png" width="32" height="32" aria-hidden="true">
               </td>
               <td>
                 <p class="mail-main__text">Protect your documents with <span class="mail-main__text--theme--bold">two-factor authentication</span>, encrypted folders, and full <span class="mail-main__text--theme--bold">HIPAA compliance</span></p>
               </td>
             </tr>
             <tr>
+              <td>
+                <p style="width:100%;height:2px;margin:0;padding:0;background-color:#f4f4f4;"></p>
+              </td>
+              <td>
+                <p style="width:100%;height:2px;margin:0;padding:0;background-color:#f4f4f4;"></p>
+              </td>
+            </tr>
+            <tr>
               <td class="mail-main__image-container" align="center" valign="top">
-                <img src="https://static.pdffiller.com/mail-templates/img/marketing/mails2020/pdffiller-signnow-discount/app-2@2x.png" width="32" height="32" alt="">
+                <img src="https://static.pdffiller.com/mail-templates/img/marketing/mails2020/pdffiller-signnow-discount/app-2@2x.png" width="32" height="32" aria-hidden="true">
               </td>
               <td>
                 <p class="mail-main__text">Work on-the-go: edit, send, and sign PDF documents right from your&nbsp;mobile device using <span class="mail-main__text--theme--bold">free pdfFiller apps</span>.</p>
               </td>
             </tr>
+            <tr>
+              <td>
+                <p style="width:100%;height:2px;margin:0;padding:0;background-color:#f4f4f4;"></p>
+              </td>
+              <td>
+                <p style="width:100%;height:2px;margin:0;padding:0;background-color:#f4f4f4;"></p>
+              </td>
+            </tr>
           </table>
-          <table class="mail-main__block" style="padding-top: 12px; padding-bottom: 28px; padding-left: 0;" cellpadding="0" cellspacing="0">
+          <table class="mail-main__block" cellpadding="0" cellspacing="0" style="padding-top: 12px;padding-bottom: 28px;padding-left: 0;">
             <tr>
               <td class="mail-main__cta__block">
                 <img src="https://static.pdffiller.com/mail-templates/img/marketing/mails2020/pdffiller-signnow-discount/image-phone@2x.png" width="260" height="242" alt="Example mobile version the application. The screen shows a document with a signature">
-                <!-- height="264" -->
               </td>
-              <td class="mail-main__cta__block" style="padding-left: 12px;">
+              <td class="mail-main__cta-block" style="margin-top: 34px;">
                 <h3 class="mail-main__cta">Build a smart document flow for&nbsp;your&nbsp;business and manage&nbsp;it&nbsp;from any device.</h3>
                 <a class="mail-main__cta-link" href="#" aria-label="Download application on the Google Play">
                   <img src="https://static.pdffiller.com/mail-templates/img/common/pdffiller-blog/button-google-blog-2x.png" width="142" height="45" aria-hidden="true">
@@ -398,7 +437,7 @@
           </table>
         </tr>
         <tr class="mail-footer">
-          <table class="mail-footer__group" cellpadding="0" cellspacing="0">
+          <table class="mail-footer__group" cellpadding="0" cellspacing="0" style="border-bottom: 1px solid #515151; width: 100%;">
             <tr class="mail-footer__title">
               <td align="center">
                 <h3>Stay connected.</h3>
@@ -431,12 +470,12 @@
               </td>
             </tr>
           </table>
-          <table class="mail-footer__group">
+          <table class="mail-footer__group" style="width: 100%;">
             <tr class="mail-footer__info" align="center">
               <td>
                 <p class="mail-footer__info-text">2020 © airSlate, Inc. All rights reserved.</p>
                 <p class="mail-footer__info-text">1371 Beacon st, suite 301, Brookline, MA 02446</p>
-                <p class="mail-footer__info-text">If you no longer wish to receive emails from pdfFiller, please click <a href="#" class="mail-footer__info-link" style="color: #999999; text-decoration: underline;">here.</a></p>
+                <p class="mail-footer__info-text">If you no longer wish to receive emails from pdfFiller, please click <a href="#" class="mail-footer__info-link" aria-label="Unsubscribe from email newsletter">here.</a></p>
               </td>
             </tr>
           </table>
