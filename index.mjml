@@ -1,12 +1,66 @@
-
-<mjml>
-  <mj-body>
-    <mj-section>
+<mjml background-color="#f4f4f4">
+  <mj-body width="600px">
+    <mj-section padding="24px 30px">
       <mj-column>
-        <mj-image width="100px" src="https://mjml.io/assets/img/logo-small.png"></mj-image>
-        <mj-divider border-color="#F45E43"></mj-divider>
-        <mj-text font-size="20px" color="#F45E43" font-family="helvetica">Hello World</mj-text>
+        <mj-image padding="0" align="left" src="https://static.pdffiller.com/mail-templates/img/marketing/mails2020/pdffiller-dark-mode/pdf-filler-logo@2x.png" width="130px" height="30px" alt="Logo PDFFiller"></mj-image>
+      </mj-column>
+      <mj-column>
+        <mj-navbar align="right">
+          <mj-navbar-link href="#"
+                          padding="0"
+         									font-size="14px"
+                     			line-height="24px"
+                     			font-weight="700"
+                     			color="#cf4436">
+            <mj-text padding="0">
+              Get My Discount →
+            </mj-text>
+          </mj-navbar-link>
+        </mj-navbar>
       </mj-column>
     </mj-section>
+    <mj-divider border-color="#F4F4F4" width="600px" border-width="1px"></mj-divider>
+    <mj-wrapper>
+      <mj-section padding="0 30px">
+        <mj-column>
+          <mj-image src="https://static.pdffiller.com/mail-templates/img/marketing/mails2020/pdffiller-signnow-discount/disc-25@2x.png" width="225px" height="140px" alt="25% discount image"></mj-image>
+					<mj-text align="center"
+                   padding="0"
+                   padding-bottom="6px"
+                   font-size="28px"
+                   line-height="36px"
+                   font-weight="700">If you missed our 50% discount,<br>don’t worry.</mj-text>
+          <mj-text align="center"
+                   padding="0"
+                   padding-bottom="12px"
+                   font-size="20px"
+        					 line-height="32px"
+                   font-weight="700">Start a pdfFiller subscription now with a 25% discount</mj-text>
+          <mj-text font-size="16px"
+                   line-height="28px"
+                   padding="0"
+                   padding-bottom="12px">Come back to pdfFiller. Get 25% OFF a pdfFiller annual subscription and start managing documents hassle-free! Go beyond simple PDF editing.</mj-text>
+            <mj-button href="#"
+                       background-color="#FF9000"
+                       font-size="14px"
+                       line-height="16px"
+                       letter-spacing="0.04em">
+              <mj-text>Get My Discount</mj-text>
+            </mj-button>
+   					<mj-divider border-color="#DDDDDD"
+                        width="84px"
+                        border-width="1px"></mj-divider>
+        </mj-column>
+      </mj-section>
+      <mj-section>
+    	</mj-section>
+    </mj-wrapper>
+		<mj-section>
+
+    </mj-section>
+    <mj-image></mj-image>
+
+
+
   </mj-body>
 </mjml>
