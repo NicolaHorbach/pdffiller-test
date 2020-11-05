@@ -15,4 +15,6 @@
 <br>
 Версия на HTMl: https://github.com/NicolaHorbach/pdffiller-test/tree/test/template_v.1 <br>
 <br>
-Версия на MJML: https://github.com/NicolaHorbach/pdffiller-test/tree/test/mjml
+Версия на MJML: https://github.com/NicolaHorbach/pdffiller-test/tree/test/mjml <br>
+<br>
+Проверка была на MacOs в браузерном почтовике, Icloud, Ios - Icloud, Gmail, Android - gmail.
