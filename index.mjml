@@ -52,15 +52,52 @@
                         border-width="1px"></mj-divider>
         </mj-column>
       </mj-section>
-      <mj-section>
+      <mj-section padding="30px">
+        <mj-column>
+          <mj-text>This offer ends soon!</mj-text>
+          <mj-image src="https://static.pdffiller.com/mail-templates/img/marketing/mails2020/pdffiller-signnow-discount/notarize-2@2x.png" padding="0" width="32px" height="32px"></mj-image>
+          <mj-text padding="12px 0"><span>Notarize</span> your documents online 24/7 in pdfFiller without having to meet a notary in person.</mj-text>
+          <mj-image src="https://static.pdffiller.com/mail-templates/img/marketing/mails2020/pdffiller-signnow-discount/submit-2@2x.png" padding="0" width="32px" height="32px"></mj-image>
+          <mj-text padding="12px 0">Fill out and <span>submit your tax returns to the IRS electronically</span>. pdfFiller provides you with a comprehensive library of US tax documents and forms ready to be completed.</mj-text>
+          <mj-image src="https://static.pdffiller.com/mail-templates/img/marketing/mails2020/pdffiller-signnow-discount/secure@2x.png" padding="0" width="32px" height="32px"></mj-image>
+          <mj-text padding="12px 0">Protect your documents with <span>two-factor authentication</span>, encrypted folders, and full <span>HIPAA compliance</span>.</mj-text>
+          <mj-image src="https://static.pdffiller.com/mail-templates/img/marketing/mails2020/pdffiller-signnow-discount/app-2@2x.png" padding="0" width="32px" height="32px"></mj-image>
+          <mj-text padding="12px 0">Work on-the-go: edit, send, and sign PDF documents right from your&nbsp;mobile device using <span>free pdfFiller apps</span>.</mj-text>
+        </mj-column>
     	</mj-section>
+      <mj-section>
+        <mj-column padding="0px" width="260px">
+          <mj-image src="https://static.pdffiller.com/mail-templates/img/marketing/mails2020/pdffiller-signnow-discount/image-phone@2x.png" width="260px" height="242px" alt="Example mobile version the application. The screen shows a document with a signature" padding="0px"></mj-image>
+          <mj-text>– Best regards, Sarah&nbsp;from&nbsp;the&nbsp;pdfFiller Team</mj-text>
+        </mj-column>
+        <mj-column>
+          <mj-text>Build a smart document flow for&nbsp;your&nbsp;business and manage&nbsp;it&nbsp;from any device.</mj-text>
+          <mj-image src="https://static.pdffiller.com/mail-templates/img/common/pdffiller-blog/button-google-blog-2x.png" width="142px" height="45px" href="#">
+          </mj-image>
+          <mj-image src="https://static.pdffiller.com/mail-templates/img/common/pdffiller-blog/button-apple-blog-2x.png" width="142px" height="45px" aria-hidden="true" href="#"></mj-image>
+      </mj-section>
     </mj-wrapper>
-		<mj-section>
-
+		<mj-section background-color="#414141">
+      <mj-column>
+    	 <mj-text>Stay connected.</mj-text>
+        <mj-social>
+        	<mj-social-element href="#" name="facebook" icon-size="30px" border-radius="50px" background-color="#bfbfbf">
+        	</mj-social-element>
+        	<mj-social-element href="#" name="linkedin" icon-size="30px" border-radius="50px" background-color="#bfbfbf">
+        	</mj-social-element>
+        </mj-social>
+        <mj-navbar>
+          <mj-navbar-link href="#">Forgot Password?</mj-navbar-link>
+          <mj-navbar-link href="#">Contact Support</mj-navbar-link>
+          <mj-navbar-link href="#">Terms of Services</mj-navbar-link>
+          <mj-navbar-link href="#">Privacy Policy</mj-navbar-link>
+        </mj-navbar>
+        <mj-text>2020 © airSlate, Inc. All rights reserved.</mj-text>
+        <mj-text>1371 Beacon st, suite 301, Brookline, MA 02446</mj-text>
+        <mj-navbar>
+          <mj-navbar-link href="#">If you no longer wish to receive emails from pdfFiller, please click here.</mj-navbar-link>
+        </mj-navbar>
+      </mj-column>
     </mj-section>
-    <mj-image></mj-image>
-
-
-
   </mj-body>
 </mjml>
